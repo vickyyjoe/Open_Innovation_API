@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>input_descriptionIdea</name>
+   <tag></tag>
+   <elementGuidId>414b7ff2-5419-4173-9cb1-4da1af1eeec8</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='__next']/div/div[2]/div[2]/div/div/form/div[5]/div</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>div.sun-editor</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>div</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>sun-editor</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>UndoCTRL+ZRedoCTRL+Y / CTRL+SHIFT+ZFontFontSizeSizeFormatsFormatsBoldCTRL+BUnderlineCTRL+UItalicCTRL+IStrikeCTRL+SHIFT+SSubscriptSuperscriptRemove FormatFont ColorHighlight ColorOutdentCTRL+[IndentCTRL+]AlignHorizontal lineListTableLinkImageVideoFull screenShow blocksCode viewPreviewprintSaveCTRL+STemplateAlign leftAlign centerAlign rightAlign justify(Default)ArialComic Sans MSCourier NewImpactGeorgiatahomaTrebuchet MSVerdana(Default)891011121416182022242628364872ParagraphNormal (DIV)QuoteCodeHeader1Header2Header3Header4Header5Header6Align leftAlign centerAlign rightAlign justify(Default)ArialComic Sans MSCourier NewImpactGeorgiatahomaTrebuchet MSVerdana(Default)891011121416182022242628364872ParagraphNormal (DIV)QuoteCodeHeader1Header2Header3Header4Header5Header6Insert imageImageLinkSelect from filesImage URLAlternative textWidth Heightx Constrain proportions Insert descriptionURL to linkText to display Open in new window Download linkBasicLeftCenterRightSubmitInsert LinkURL to linkText to display Open in new window Download linkSubmitInsert VideoMedia embed URL, YouTube/VimeoWidth Height(Ratio)x - 16:94:321:9 Constrain proportionsBasicLeftCenterRightSubmit100%Resize 100%75%Resize 75%50%Resize 50%Auto sizeRotate leftRotate rightMirror, HorizontalMirror, VerticalAlignBasicLeftCenterRightInsert descriptionRevertEditRemove EditUnlinkRemovePInsert imageImageLinkSelect from filesImage URLAlternative textWidth Heightx Constrain proportions Insert descriptionURL to linkText to display Open in new window Download linkBasicLeftCenterRightSubmitInsert LinkURL to linkText to display Open in new window Download linkSubmitInsert VideoMedia embed URL, YouTube/VimeoWidth Height(Ratio)x - 16:94:321:9 Constrain proportionsBasicLeftCenterRightSubmit100%Resize 100%75%Resize 75%50%Resize 50%Auto sizeRotate leftRotate rightMirror, HorizontalMirror, VerticalAlignBasicLeftCenterRightInsert descriptionRevertEditRemove EditUnlinkRemove</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;__next&quot;)/div[1]/div[2]/div[@class=&quot;container py-4&quot;]/div[@class=&quot;row&quot;]/div[@class=&quot;col&quot;]/form[1]/div[@class=&quot;form-group&quot;]/div[@class=&quot;sun-editor&quot;]</value>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='__next']/div/div[2]/div[2]/div/div/form/div[5]/div</value>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Describe your idea'])[1]/following::div[1]</value>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='SubTopic'])[1]/following::div[3]</value>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[5]/div</value>
+   </webElementXpaths>
+</WebElementEntity>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>POST Files Upload from URL to File System</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>7864a504-4b0f-46c6-8b5c-9db18d4221eb</testCaseGuid>
+</TestCaseEntity>
