@@ -1,0 +1,53 @@
+import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
+import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
+import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
+import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
+import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
+import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
+import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as CucumberKW
+import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as Mobile
+import com.kms.katalon.core.model.FailureHandling as FailureHandling
+import com.kms.katalon.core.testcase.TestCase as TestCase
+import com.kms.katalon.core.testdata.TestData as TestData
+import com.kms.katalon.core.testng.keyword.TestNGBuiltinKeywords as TestNGKW
+import com.kms.katalon.core.testobject.ConditionType as ConditionType
+import com.kms.katalon.core.testobject.RequestObject as RequestObject
+import com.kms.katalon.core.testobject.RestRequestObjectBuilder as RestRequestObjectBuilder
+import com.kms.katalon.core.testobject.TestObject as TestObject
+import com.kms.katalon.core.testobject.TestObjectProperty as TestObjectProperty
+import com.kms.katalon.core.testobject.UrlEncodedBodyParameter as UrlEncodedBodyParameter
+import com.kms.katalon.core.testobject.impl.HttpTextBodyContent as HttpTextBodyContent
+import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
+import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
+import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
+import groovy.json.JsonSlurper as JsonSlurper
+import internal.GlobalVariable as GlobalVariable
+import keyword.RandomGenerator as RandomGenerator
+import org.json.JSONObject as JSONObject
+import org.openqa.selenium.Keys as Keys
+
+String randomBannerName = 'Judges name ' + CustomKeywords.'keyword.RandomGenerator.randomString'(30)
+String randomBannerName2 = 'Judges email ' + CustomKeywords.'keyword.RandomGenerator.randomString'(30)
+String randomBannerName3 = 'Judges position ' + CustomKeywords.'keyword.RandomGenerator.randomString'(30)
+String randomBannerName4 = 'Judges company ' + CustomKeywords.'keyword.RandomGenerator.randomString'(30)
+
+HashMap<String, Object> Judges = new HashMap<String, Object>()
+Judges.put('Id', GlobalVariable.ApiID)
+Judges.put('status', 1)
+Judges.put('createdOn', '2021-09-22T04:25:43.608Z')
+Judges.put('modifiedOn', '2021-09-22T04:25:43.608Z')
+Judges.put('createdBy', GlobalVariable.createdBy)
+Judges.put('createdName', GlobalVariable.createdName)
+Judges.put('modifiedBy', GlobalVariable.modifiedBy)
+Judges.put('modifiedName', GlobalVariable.modifiedName)
+Judges.put('name', randomBannerName)
+Judges.put('email', randomBannerName2)
+Judges.put('position', randomBannerName3)
+Judges.put('company', randomBannerName4)
+Judges.put('show', true)
+Judges.put('year', 0)
+print(Judges)
+
+response = CustomKeywords.'keyword.API.Put' ('api/Judges/', Judges)
+
+WS.verifyResponseStatusCode(response, 204)

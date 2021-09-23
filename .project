@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
-	<name>H%%Magang%Git (2)%Open_innovation_API%Open_innovation_API.prj</name>
 	<comment></comment>
 	<projects>
 	</projects>
@@ -17,7 +16,7 @@
 	</natures>
 	<filteredResources>
 		<filter>
-			<id>1632378583712</id>
+
 			<name></name>
 			<type>10</type>
 			<matcher>
@@ -26,7 +25,6 @@
 			</matcher>
 		</filter>
 		<filter>
-			<id>1632378583716</id>
 			<name></name>
 			<type>6</type>
 			<matcher>
@@ -35,7 +33,7 @@
 			</matcher>
 		</filter>
 		<filter>
-			<id>1632380620799</id>
+
 			<name></name>
 			<type>10</type>
 			<matcher>
@@ -44,7 +42,7 @@
 			</matcher>
 		</filter>
 		<filter>
-			<id>1632380620810</id>
+
 			<name></name>
 			<type>6</type>
 			<matcher>
