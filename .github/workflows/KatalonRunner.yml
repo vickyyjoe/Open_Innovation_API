@@ -12,7 +12,7 @@ jobs:
     - name: Checkout
       uses: katalon-studio/katalon-studio-github-action@b6f77f389330390acb241cb6f138b1237f523b77
     - name: Katalon Studio Github Action
-      uses: katalon-studio/katalon-studio-github-action@v2
+      uses: katalon-studio/katalon-studio-github-action@v2.2
       with:
           version: '7.5.5'
           projectPath: '${{ github.workspace }}'
