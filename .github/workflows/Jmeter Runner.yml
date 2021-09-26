@@ -22,7 +22,7 @@ jobs:
       - name: Run JMeter Action
         uses: ./
         with:
-          testFilePath: tests/sample_test.jmx
+          testFilePath: tests/test.jmx
           outputReportsFolder: reports/
           args: "--loglevel INFO"
 
