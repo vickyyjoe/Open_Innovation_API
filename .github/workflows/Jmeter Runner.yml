@@ -1,3 +1,4 @@
+---
 name: Test JMeter Action
 
 on:
@@ -8,10 +9,14 @@ on:
     branches: [main]
 
 jobs:
+
   action_build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
+
+      - name: Lint all YAML files in the directory
+        uses: ibiqlik/action-yamllint@master
 
       - name: Run JMeter Action
         uses: ./
@@ -24,3 +29,29 @@ jobs:
         with:
           name: jmeter-test-results
           path: reports/
+
+  image_scan:
+    needs: action_build
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Build Apache JMeter Image
+        uses: docker/build-push-action@v2
+        with:
+          push: false
+          tags: "localbuild/apache-jmeter-action:latest"
+
+      - name: Scan Apache JMeter Image
+        uses: anchore/scan-action@v2
+        id: scan
+        with:
+          image: "localbuild/apache-jmeter-action:latest"
+          acs-report-enable: true
+
+      - name: upload Anchore scan SARIF report
+        uses: github/codeql-action/upload-sarif@v1
+        with:
+          sarif_file: ${{ steps.scan.outputs.sarif }}
+
+      - name: Inspect action SARIF report
+        run: cat ${{ steps.scan.outputs.sarif }}
