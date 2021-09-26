@@ -1,4 +1,4 @@
-name: CI
+name: Katalon Runner
 on:
   push:
     branches: [ master ]
