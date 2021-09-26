@@ -15,4 +15,4 @@ jobs:
       with:
           version: '8.1.0'
           projectPath: '${{ github.workspace }}'
-          args: '-noSplash -retry=0 -browserType=Chrome -statusDelay=15 -testSuitePath="Test Suites/TS_RegressionTest" -apiKey= a3fd62b9-d5a4-4ed4-a033-44cf6797b188 --config -webui.autoUpdateDrivers=true'
+          args: '-noSplash -retry=0 -browserType=Chrome -statusDelay=15 -testSuitePath="Test Suites/TS_RegressionTest" -apiKey= e209b7c6-6e86-421b-8fe2-d635a5a62da5 --config -webui.autoUpdateDrivers=true'
