@@ -1,19 +1,18 @@
-name: Katalon Runner
+name: CI
 on:
   push:
     branches: [ main ]
   pull_request:
     branches: [ main ]
-
 jobs:
   build:
     runs-on: windows-latest
     steps:
     - name: Checkout
-      uses: katalon-studio/katalon-studio-github-action@b6f77f389330390acb241cb6f138b1237f523b77
+      uses: actions/checkout@v2
     - name: Katalon Studio Github Action
-      uses: katalon-studio/katalon-studio-github-action@v2.2
+      uses: katalon-studio/katalon-studio-github-action@v2.1
       with:
           version: '7.5.5'
           projectPath: '${{ github.workspace }}'
-          args: '-noSplash -retry=0 -testSuiteCollectionPath="Test Suites/Simple Test Suite Collection" -apiKey= a3fd62b9-d5a4-4ed4-a033-44cf6797b188 --config -webui.autoUpdateDrivers=true'
+          args: '-noSplash -retry=0 -browserType=Chrome -statusDelay=15 -testSuitePath="Test Suites/TS_RegressionTest" -apiKey= ${{ secrets.KATALON_API_KEY }} --config -webui.autoUpdateDrivers=true'
