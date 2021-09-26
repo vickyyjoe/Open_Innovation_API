@@ -4,15 +4,16 @@ on:
     branches: [ master ]
   pull_request:
     branches: [ master ]
+
 jobs:
   build:
     runs-on: windows-latest
     steps:
     - name: Checkout
-      uses: actions/checkout@v2
+      uses: actions/checkout@v2.2
     - name: Katalon Studio Github Action
-      uses: katalon-studio/katalon-studio-github-action@v2.1
+      uses: katalon-studio/katalon-studio-github-action@v2
       with:
           version: '7.5.5'
           projectPath: '${{ github.workspace }}'
-          args: '-noSplash -retry=0 -browserType=Chrome -statusDelay=15 -testSuitePath="Test Suites/TS_RegressionTest" -apiKey= ${{ a3fd62b9-d5a4-4ed4-a033-44cf6797b188 }} --config -webui.autoUpdateDrivers=true'
+          args: '-noSplash -retry=0 -testSuiteCollectionPath="Test Suites/Simple Test Suite Collection" -apiKey= ${{ a3fd62b9-d5a4-4ed4-a033-44cf6797b188 }} --config -webui.autoUpdateDrivers=true'
