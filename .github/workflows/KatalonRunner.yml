@@ -15,5 +15,5 @@ jobs:
       uses: katalon-studio/katalon-studio-github-action@v2
       with:
           version: '7.5.5'
-          projectPath: '${{ github.workspace }}'
+          projectPath: '${{ Open_innovation_API }}'
           args: '-noSplash -retry=0 -testSuiteCollectionPath="Test Suites/Simple Test Suite Collection" -apiKey= ${{ a3fd62b9-d5a4-4ed4-a033-44cf6797b188 }} --config -webui.autoUpdateDrivers=true'
